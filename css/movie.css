@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.title{font-family:"Comic Sans MS" ;
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+    color: rgb(243, 149, 90);
+}
+
+.title2{
+    text-align: center;
+}
+
+.title3{
+    text-align: center;
+}
+
+.youtube{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.coda{
+    background-color: rgb(249, 164, 95,0.5);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.midnightswan{
+    background-color: rgba(166, 166, 244, 0.5);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}

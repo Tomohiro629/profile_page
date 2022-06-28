@@ -1,0 +1,9 @@
+@charset "UTF=8";
+
+.title1{
+    font-family:"Comic Sans MS" ;
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+    color:rgb(226, 234, 140);
+}
