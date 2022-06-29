@@ -2,93 +2,253 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/music.css">
-    <title>Favorite Music</title>
+    <link rel="stylesheet" href="../css/music.css">
+    <title>Diagnose Music</title>
 </head>
+<style>
+body{
+    font-family: "Comic Sans MS"
+}
+
+
+</style>
 <body>
     <div>
-    <h1 class="title1">Favorite Music</h1>
-    <section>
-        <h2>かっこつけたいとき</h2>
-        <ul>
-            <li>
-             ハイパーベンチレイション
-            </li>
-            <li>
-                光
-            </li>
-            <li>
-                セツナレンサ
-            </li>
-            <li>
-                SUMMER DAZE2021
-            </li>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ 
+        <div class="choose_box">
+           
+        <div id="q_01" class="fit">
+         <h1>好きなジャンルは？</h1>
+        <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_02">ラブソング</a></li>
+        <li class="odd"><a class="btn" href="#q_03">失恋ソング</a></li>
+        <li class="odd"><a class="btn" href="#q_04">かっこいい曲</a></li>
+        <li class="odd"><a class="btn" href="#q_05">しっとり系</a></li>
         </ul>
-    </section>
-    <section>
-        <h2>夕暮れ時の散歩中</h2>
-        <ul>
-            <li>
-             お風呂上がりの
-            </li>
-            <li>
-                やどかり
-            </li>
-            <li>
-                ブレス
-            </li>
-            <li>
-                螢
-            </li>    
+         </div>
+         
+           
+         <!-- ラブソング選択 -->
+        <div id="q_02" style="display: none;">
+        <h1>曲の好みは？</h1>
+        <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_06">メジャーな曲</a></li>
+        <li class="odd"><a class="btn" href="#q_07">マイナーな曲</a></li>
+        <li class="odd"><a class="btn" href="#q_08">出題者おすすめ</a></li>
+        <li class="odd"><a class="btn" href="#q_09">アップテンポ</a></li>
+        <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
         </ul>
-    </section>   
-    <section>
-        <h2>梅雨の時期</h2>
-        <ul>
-            <li>
-            アメノヒニキク
-            </li>
-            <li>
-            傘拍子
-            </li>
-            <li>
-            雨音子
-            </li>
+        </div>
+        
+          <!-- 失恋ソング選択 -->
+        <div id="q_03" style="display: none;">
+        <h1>曲の好みは？</h1>
+        <ul class="flexbox fw">
+        <li class="even"><a class="btn" href="#q_10">メジャーな曲</a></li>
+        <li class="odd"><a class="btn" href="#q_11">マイナーな曲</a></li>
+        <li class="odd"><a class="btn" href="#q_12">出題者おすすめ</a></li>
+        <li class="odd"><a class="btn" href="#q_13">アップテンポ</a></li>
+        <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
         </ul>
-    </section>
-    <section>
-        <h2>どんちゃん騒ぎしたいとき</h2>
-        <ul>
-            <li>
-            夜泣き(味噌汁ず)
-            </li>
-            <li>
-            DADA
-            </li>
+        </div>
+        
+           <!-- かっこいい曲選択 -->
+        <div id="q_04" style="display: none;">
+        <h1>曲の好みは？</h1>
+        <ul class="flexbox fw">
+            <li class="even"><a class="btn" href="#q_14">メジャーな曲</a></li>
+            <li class="odd"><a class="btn" href="#q_15">マイナーな曲</a></li>
+            <li class="odd"><a class="btn" href="#q_16">出題者おすすめ</a></li>
+            <li class="odd"><a class="btn" href="#q_17">MVも見たい</a></li>
+            <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
         </ul>
-    </section>
-    <section>
-        <h2>洋次郎の声を聞きたいとき</h2>
-        <ul>
-            <li>
-            独白
-            </li>
+        </div>
+       
+           
+         <div id="q_05" style="display: none;">
+        <h1>曲の好みは？</h1>
+        <ul class="flexbox fw">
+            <li class="even"><a class="btn" href="#q_18">メジャーな曲</a></li>
+            <li class="odd"><a class="btn" href="#q_19">マイナーな曲</a></li>
+            <li class="odd"><a class="btn" href="#q_20">出題者おすすめ</a></li>
+            <li class="odd"><a class="btn" href="#q_21">心地いい曲</a></li>
+            <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
         </ul>
-    </section>
+        </div>
+       
+           
+           
+         <div id="q_06" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gmLXEmCExIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「ふたりごと」<br>有名すぎる名曲。</p>
+              </div>
+           <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+          
+           
+          <div id="q_07" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/msSGCeCrJos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「ラストバージン」<br>自分の結婚式で流したい・・・</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div> 
 
-<p>その他おすすめ知りたい方は下記まで連絡を</p>
+        <div id="q_08" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RTgqR_oroYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「いえない」<br>隠れた名曲
+                アルバム「×と〇と罪と」に収録</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_09" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-7WulfFPJbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「4645」<br>プロポーズの際に歌いたい！</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_10" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wvvItrHEfRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「me me she」<br>読み方は女々しい。</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_11" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c1_1vZEg5lQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「ささくれ」<br>失恋した直後に聞いてら絶対泣くなぁ</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_12" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jRhcf25o17Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「05410-(ん) 」<br>起こして。LIVEでのよく歌われる神曲。</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_13" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FsaQPQ4Drt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「バグパイプ 」<br>英詞でポップだが、しっかり失恋ソング。<br>イントロがバグパイプっぽいと言われたからバグパイプに</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_14" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7MaF-bWeLGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「おしゃかしゃま」<br>この曲しらない人はいないでしょ！</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_15" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tWB_XkQkssg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「ハイパーベンチレイション」<br>LIVEの歌唱シーンはエグかっこよ</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_16" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KArq421qlws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「SUMMER DAZE」<br>マイブーム。単純にかっこいい。</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_17" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WuU6C8oXzIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「光」<br>玉城ティナ最高。曲はより最高。</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_18" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/W0C_VJqjtpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「うるうびと」<br>映画とリンクしてて感動必至。</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_19" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UiFwo_G6tZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「愛し」<br>読み方は「かなし」。テンポが変わって気持ちいい。</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_20" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3L9HodXrPMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「救世主」<br>絶対延命のLIVEは染みた・・・</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+
+        <div id="q_21" style="display: none;">
+            <h1>あなたにおすすめ・・・</h1>
+            <div class="animation_box4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/n8cpqRJjumo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>「七ノ歌」<br>読み方は「なのか」。<br>25コ目の染色体と繋がる曲。</p>
+              </div>
+             <span><a class="btn" href="#q_01">最初の選択に戻る</a></span>
+        </div>
+       
+        </div>
+
+
 </div>
 
-    
+<script type="text/javascript" src="../js/music.js">
+    let num = Math.round(Math.random()*12);
+</script>
 </body>
-<form id="contact_form" action="dummy.php" method="post">
-    <dl>
-        <dt>お名前</dt>
-        <dd><input typr="text" name="name"></dd>
-        <dt>メールアドレス</dt>
-        <dd><input typr="email" name="mail"></dd>
-        <dt>〇〇な時におすすめは？</dt>
-        <dd><textarea name="comment"></textarea></dd>
-    </dl>
-</form>    
+<div class="Form">
+    <div class="Form-Item">
+      <p class="Form-Item-Label">
+        <span class="Form-Item-Label-Required">Required</span>Name
+      </p>
+      <input type="text" class="Form-Item-Input" placeholder="例）山田　太郎">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">Required</span>Mail-Address</p>
+      <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">Required</span>Recommended at 〇〇？</p>
+      <textarea class="Form-Item-Textarea"></textarea>
+    </div>
+    <input type="submit" class="Form-Btn" value="送信する">
+  </div>
 </html>
