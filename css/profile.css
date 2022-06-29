@@ -116,10 +116,13 @@ label  {
 }
 
 #popup{
-    width:30%;
-    line-height:100px;
-    background:#000;
-    color: antiquewhite;
+    border:solid 3px pink;
+    z-index: 10;
+    width:40%;
+    height: 80%;
+    line-height:50px;
+    background:rgba(182, 225, 249, 0.8);
+    color: black;
     padding:0 4%;
     box-sizing:border-box;
     display:none;
@@ -131,10 +134,13 @@ label  {
   }
 
   #popup1{
-    width:30%;
-    line-height:100px;
-    background:#000;
-    color: antiquewhite;
+    border:solid 3px orange;
+    z-index: 10;
+    width:40%;
+    height: 80%;
+    line-height:50px;
+    background:rgba(182, 225, 249, 0.8);
+    color: black;
     padding:0 4%;
     box-sizing:border-box;
     display:none;
@@ -146,10 +152,13 @@ label  {
   }
 
   #popup2{
-    width:30%;
-    line-height:100px;
-    background:#000;
-    color: antiquewhite;
+    border:solid 3px rgb(0, 87, 134);
+    z-index: 10;
+    width:40%;
+    height: 80%;
+    line-height:50px;
+    background:rgba(182, 225, 249, 0.8);
+    color: black;
     padding:0 4%;
     box-sizing:border-box;
     display:none;
@@ -161,10 +170,13 @@ label  {
   }
 
   #popup3{
-    width:30%;
-    line-height:100px;
-    background:#000;
-    color: antiquewhite;
+    border:solid 3px rgb(2, 255, 225);
+    z-index: 10;
+    width:40%;
+    height: 80%;
+    line-height:50px;
+    background:rgba(182, 225, 249, 0.8);
+    color: black;
     padding:0 4%;
     box-sizing:border-box;
     display:none;
@@ -174,6 +186,36 @@ label  {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+
+  #text1{
+    font-family:"Comic Sans MS" ;
+    color: black;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  #text2{
+    font-family:"Comic Sans MS" ;
+    color: black;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  #text3{
+    font-family:"Comic Sans MS" ;
+    color: black;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  #text4{
+    font-family:"Comic Sans MS" ;
+    color: black;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+
  
   label{
     display:block;
