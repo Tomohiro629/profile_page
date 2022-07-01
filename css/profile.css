@@ -38,6 +38,7 @@ main, .container, label, label:before, label:after {
     position: absolute;
 
     top: 0;
+    margin-bottom: 50px;
     bottom: 0;
     left: 0;
     right: 0;
