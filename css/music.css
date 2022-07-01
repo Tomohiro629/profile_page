@@ -1,15 +1,48 @@
 @charset "UTF=8";
 
-body {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Yu Gothic", YuGothic, sans-serif;
-  }
+
+
+.line {
+  font-family:"Comic Sans MS" ;
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(228, 242, 76);
+  text-align: center;
+  position: relative;
+}
+
+.line::before,
+.line::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  display: block;
+  background-color: rgb(129, 217, 244);
+}
+
+.line::before {
+  position: absolute;
+  top:50%;
+  left:38%;
+  transform: translateY(-50%);
+}
+.line::after {
+  position: absolute;
+  top:50%;
+  right:38%;
+  transform: translateY(-50%);
+}
+
 
   .btn{
-   height: 50px;
-    width: 500px;
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    min-width: 100px;
+    
   }
 
   .contact{
@@ -17,10 +50,12 @@ body {
   }
    
   .choose_box {
-    position: relative;
+    display: flex;
     margin-top: 10px;
-    
-    height: 32vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    height: 28vw;
     width: 100%;
   }
    .choose_box h1{
@@ -44,8 +79,9 @@ body {
   .choose_box ul li {
     width: calc(100% / 2 - 20px);
     margin-top: 50px;
-    margin-right: 40px;
-    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
     list-style: none;
   }
    
@@ -90,10 +126,10 @@ body {
     }
    
   .fit {
-    position: absolute;
     left: 0px;
-    top: 20px;
+    top:auto;
     width: 100%;
+    bottom: 0;
   }
   #q_06 span,#q_07 span {
     display: block;
@@ -189,51 +225,42 @@ body {
 
   HTML CSSResult Skip Results Iframe
 EDIT ON
+
 .Form {
-  margin-top: 80px;
+  display: flex;
+  bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 720px;
 }
-@media screen and (max-width: 480px) {
-  .Form {
-    margin-top: 40px;
-  }
-}
-.Form-Item {
-  border-top: 1px solid #ddd;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  width: 100%;
-  align-items: center;
-}
+
+
 @media screen and (max-width: 480px) {
   .Form-Item {
     padding-left: 14px;
     padding-right: 14px;
-    padding-top: 16px;
+    padding-top: auto;
     padding-bottom: 16px;
     flex-wrap: wrap;
   }
 }
-.Form-Item:nth-child(5) {
-  border-bottom: 1px solid #ddd;
-}
+
 .Form-Item-Label {
+  text-align: left;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    padding-top: auto;
     padding-left: 1em;
     padding-right: 1em;
-    height: 48px;
-    flex: 1;
+    height: auto;
     width: 100%;
     max-width: 410px;
   letter-spacing: 0.05em;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
 }
 @media screen and (max-width: 480px) {
   .Form-Item-Label {
+    text-align: left;
     max-width: inherit;
     display: flex;
     align-items: center;
@@ -241,6 +268,7 @@ EDIT ON
   }
 }
 .Form-Item-Label.isMsg {
+  text-align: left;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1em;
@@ -256,16 +284,15 @@ EDIT ON
   }
 }
 .Form-Item-Label-Required {
+  text-align: left;
   border-radius: 6px;
-  margin-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  margin-top: 15px;
   width: 75px;
   display: inline-block;
   text-align: center;
-  background: #5bb6c8;
+  background: #ec5d5d;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
 }
 @media screen and (max-width: 480px) {
   .Form-Item-Label-Required {
@@ -282,7 +309,7 @@ EDIT ON
   margin-left: 40px;
   padding-left: 1em;
   padding-right: 1em;
-  height: 48px;
+  height: 30px;
   flex: 1;
   width: 100%;
   max-width: 410px;
@@ -293,21 +320,23 @@ EDIT ON
   .Form-Item-Input {
     margin-left: 0;
     margin-top: 18px;
-    height: 40px;
     flex: inherit;
     font-size: 15px;
   }
 }
 .Form-Item-Textarea {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(0, 166, 255);
   border-radius: 6px;
   margin-left: 40px;
   padding-left: 1em;
   padding-right: 1em;
-  height: 216px;
+  height: 100px;
   flex: 1;
   width: 100%;
   max-width: 410px;
+  min-width: 410px;
+  min-height: 30px;
+  max-height: 100px;
   background: #eaedf2;
   font-size: 18px;
 }
@@ -325,15 +354,14 @@ EDIT ON
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
+ 
   width: 100px;
   display: block;
   letter-spacing: 0.05em;
   background: #5bb6c8;
   color: #fff;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
 }
 @media screen and (max-width: 480px) {
   .Form-Btn {

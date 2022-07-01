@@ -1,11 +1,37 @@
 @charset "UTF-8";
 
-.title{font-family:"Comic Sans MS" ;
-    font-size: 3em;
+
+.line {
+    font-family:"Comic Sans MS" ;
+    font-size: 40px;
     justify-content: center;
     text-align: center;
     color: rgb(243, 149, 90);
-}
+    text-align: center;
+    position: relative;
+  }
+  
+  .line::before,
+  .line::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    display: block;
+    background-color: rgb(228, 242, 76);
+  }
+  
+  .line::before {
+    position: absolute;
+    top:50%;
+    left:38%;
+    transform: translateY(-50%);
+  }
+  .line::after {
+    position: absolute;
+    top:50%;
+    right:38%;
+    transform: translateY(-50%);
+  }
 
 .title2{
     text-align: center;
