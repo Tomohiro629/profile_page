@@ -1,11 +1,37 @@
 @charset "UTF=8";
 
-.title1{
-    font-family:"Comic Sans MS" ;
-    font-size: 3em;
-    color:rgb(129, 217, 244);
-    text-align: center;
-    margin: auto;
+
+
+.line {
+  font-family:"Comic Sans MS" ;
+  font-size: 40px;
+  color:rgb(129, 217, 244);
+  text-align: center;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.line::before,
+.line::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  display: block;
+  background-color: rgb(243, 149, 90);
+}
+
+.line::before {
+  position: absolute;
+  top:50%;
+  left:38%;
+  transform: translateY(-50%);
+}
+.line::after {
+  position: absolute;
+  top:50%;
+  right:38%;
+  transform: translateY(-50%);
 }
 
 .popup {

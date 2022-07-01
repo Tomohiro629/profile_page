@@ -6,13 +6,47 @@
     <title>Diagnose Music</title>
 </head>
 <style>
-body{
-    font-family: "Comic Sans MS"
+body{text-align: center;
+    font-family: "Comic Sans MS";
+    margin:0;
+    padding: 0;
 }
 
+h1{
+  font-family: "Comic Sans MS";
+}
+
+.msg{
+  margin-top: -30px ;
+}
+
+span{
+  font-family: "Comic Sans MS";
+  text-align: center;
+}
+
+.page{
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fit{
+  margin-bottom: 500px;
+}
 
 </style>
 <body>
+  <h1 class="line">Diagnose Music</h1>
+  <div class="page">
     <div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  
@@ -233,22 +267,23 @@ body{
 <script type="text/javascript" src="../js/music.js">
     let num = Math.round(Math.random()*12);
 </script>
-</body>
+  </div>
 <div class="Form">
     <div class="Form-Item">
       <p class="Form-Item-Label">
-        <span class="Form-Item-Label-Required">Required</span>Name
+        <span class="Form-Item-Label-Required">Required</span><p class="msg">Name</p>
       </p>
       <input type="text" class="Form-Item-Input" placeholder="例）山田　太郎">
     </div>
     <div class="Form-Item">
-      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">Required</span>Mail-Address</p>
+      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">Required</span><p class="msg">Mail-Address</p></p>
       <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
     </div>
     <div class="Form-Item">
-      <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">Required</span>Recommended at 〇〇？</p>
+      <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">Required</span><p class="msg">Recommended at 〇〇？</p>
       <textarea class="Form-Item-Textarea"></textarea>
-    </div>
+      </p></div>
     <input type="submit" class="Form-Btn" value="送信する">
   </div>
+</body>
 </html>

@@ -57,7 +57,7 @@
   right: -2px;
 }
 .music-img:hover {
-  color: rgb(226, 234, 140);
+  color: rgb(226, 242, 54);
 }
 .music-img:hover::before,
 .music-img:hover::after {
@@ -65,13 +65,13 @@
   height: 100%;
 }
 .music-img:hover::before {
-  border-bottom-color: rgb(226, 234, 140);
-  border-left-color: rgb(226, 234, 140);
+  border-bottom-color: rgb(226, 242, 54);
+  border-left-color: rgb(226, 242, 54);
   transition: height .2s, width .2s .2s;
 }
 .music-img:hover::after {
-  border-top-color: rgb(226, 234, 140);
-  border-right-color: rgb(226, 234, 140);
+  border-top-color: rgb(226, 242, 54);
+  border-right-color: rgb(226, 242, 54);
   transition: height .2s .4s, width .2s .6s;
 }
 
